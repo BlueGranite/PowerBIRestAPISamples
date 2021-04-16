@@ -61,6 +61,6 @@ for ($i = 1; $i -le $nbrDaysToGoBack; $i++)
     While ($null -ne $result.ContinuationToken)
 
     $activity| ConvertTo-JSON -Compress | Set-Content $consolidatedFile
-    "Output $($activity.Count) records to $outFile"
+    "Output $($activity.Count) records to $consolidatedFile"
 }
 
